@@ -12,3 +12,5 @@ function makeRequest(url) {
             console.log("Sorry, there was an error when fetching your data!");
         })
 }
+
+makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
