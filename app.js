@@ -31,7 +31,6 @@ function processDegreeData() {
 }
 
 async function makeRequest() {
-    console.log("just beginning");
     await fetch('https://serene-wing-4e1877.netlify.app/degrees.json')
         //.then(response => response.json())
         .then(function(response) {
