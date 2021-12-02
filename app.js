@@ -34,7 +34,7 @@ async function makeRequest() {
             //if (!response.ok) {
                 //throw new Error("Status Issue " + response.status);
             //}
-            response.json())
+            response.json().then(data => ({status: response.status, body: data})))
         // .then(function(response) {
 
         //     // print status to the console
