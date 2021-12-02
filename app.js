@@ -30,7 +30,7 @@ async function fetchDegreeData() {
 
             // paragraph info that contains first degree info we want to write to the html page
             const firstDegreeInfo = `The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
-            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}.`
+            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}. `
 
             // gather data from the second college degree (array index 1)
             const secondSchool = data.my_degrees[1].degree.school;
