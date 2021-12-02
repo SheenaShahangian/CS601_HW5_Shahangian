@@ -61,10 +61,12 @@ fetch(degreesUrl).then(
     }
 ).then(
     (value) => {
-        console.log(value);
+        //console.log(value);
         //degreeArray = value;
         //console.log("my degrees");
         //console.log(degreeArray);
+        degreeArray = Object.entries(value);
+        console.log(degreeArray);
     
 
     }
