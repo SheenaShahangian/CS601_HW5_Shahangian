@@ -55,7 +55,7 @@ fetch(degreesUrl).then(
     }
 ).then(
     (data) => {
-        console.log(data[0]);
+        console.log(data);
     
 
     }
