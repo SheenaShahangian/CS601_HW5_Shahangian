@@ -63,10 +63,6 @@ fetch(degreesUrl).then(
     (response) => {
         degreeArray = response;
         console.log(degreeArray);
-        for (element of degreeArray) {
-            console.log("ELEMENT");
-            console.log(element);
-        }
     }
 )
 
