@@ -63,6 +63,7 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * I have tested my program in Google Chrome, Firefox, and Safari to ensure it works as expected in multiple browsers.
 * I have designed and styled my page so that it is a clean and easy to use user interface.
+* I have used new ES6 features, such as arrow functions, let and const. I have also used an async function, per the professor's recommendation (ES8).
 * While not explicitly asked for in the instructions, I have opted to write my degree data back into the html page, so the user doesn't have to reference the console if they don't want to.
 * I have ensured that I have not only checked the status code of the response, but that I have a catch statement that gracefully handles those issues.
 * Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
