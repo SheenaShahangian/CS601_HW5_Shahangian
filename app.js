@@ -4,6 +4,7 @@ async function makeRequest(url) {
     await fetch(url)
         // the ".then" listed below will run when we get a response from the server
         .then(function(response) {
+            console.log("pre-check");
             // check the status, and proceed if status is ok
             if (response.status === 200) {
                 // return JSON object
@@ -16,4 +17,4 @@ async function makeRequest(url) {
         })
 }
 
-makeRequest("degrees.json");
+let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
