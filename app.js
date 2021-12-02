@@ -1,3 +1,6 @@
+// get the button from the page, which we will replace with the degree information
+let fetchDegreeButton = document.getElementById("get_degrees_button");
+
 
 // url for the JSON file
 let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
