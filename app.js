@@ -43,6 +43,8 @@ let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 //         //.then(data => console.log(data));
 // }
 
+let degreeArray = [];
+
 fetch(degreesUrl).then(
     (response) => {
         // log the status
@@ -57,6 +59,11 @@ fetch(degreesUrl).then(
     }
 ).then(
     (response) => {
-        console.log(response);
+        degreeArray = response;
     }
 )
+
+for (element of degreeArray) {
+    console.log("ELEMENT");
+    console.log(element);
+}
