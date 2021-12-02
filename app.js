@@ -47,6 +47,12 @@ fetch(degreesUrl).then(
     (response) => {
         // log the status
         console.log(`Status ${response.status}`);
-        console.log(response.json());
+
+        if (response.status === 200) {
+            console.log(response.json());
+        }
+        else {
+            console.log("Sorry, there was an error when fetching your data!")
+        }
     }
 )
