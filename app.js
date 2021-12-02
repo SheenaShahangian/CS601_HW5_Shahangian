@@ -56,7 +56,7 @@ fetch(degreesUrl).then(
 ).then(
     (data) => {
         console.log("in the data section");
-        console.log(data);
+        console.log(data.my_degrees[0].degree.school);
     
 
     }
