@@ -41,6 +41,10 @@ The repository is public, however should you have any trouble accessing it, plea
 
 ## Requested Elements
 
+Per the instructions, I have used the JSON file from the module notes as my guide when creating my own JSON file, which can be found at this link: https://serene-wing-4e1877.netlify.app/degrees.json
+
+The JSON file can also be found in the submitted zipped folder, with the filename degrees.json. This has been run through the JSON validator and does validate.
+
 Per the instructions, I have done the following in my app.js file, which contains my program's logic.
 
 * I have uploaded my json file (degrees.json) to the web server. It can be found via this link: https://serene-wing-4e1877.netlify.app/degrees.json
@@ -63,3 +67,4 @@ I've attempted to add some new features beyond the standard requirements listed 
 * I have ensured that I have not only checked the status code of the response, but that I have a catch statement that gracefully handles those issues.
 * Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
 * I have thoroughly commented all of my code, to make it easy to understand and come back to in the future.
+* While not explicitly mentioned in the instructions this week, I made sure to run my HTML and CSS through the validators to ensure they don't produce any errors.
