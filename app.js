@@ -10,7 +10,7 @@ async function makeRequest(url) {
 
             // check the status, and proceed if status is ok
             if (response.status === 200) {
-                response.json();
+                //response.json();
             }
             // if status is not ok, print error message to the console
             else {
@@ -18,6 +18,8 @@ async function makeRequest(url) {
             }
         })
         .then(function(data) {
+            console.log("data");
+            console.log(data);
             return data;
         })
 }
