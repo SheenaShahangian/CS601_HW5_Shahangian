@@ -43,9 +43,10 @@ async function fetchDegreeData() {
             receive this degree in the year ${secondGraduationYear}. </p>`
 
             const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
+            console.log(degreeInfo);
 
             // write the degree content to the page
-            degreeInfoContainer.innerHTML = degreeInfo;
+            //degreeInfoContainer.innerHTML = degreeInfo;
         }
     )
     // error message if there's an issue fetching data
