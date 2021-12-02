@@ -10,8 +10,7 @@ async function makeRequest(url) {
 
             // check the status, and proceed if status is ok
             if (response.status === 200) {
-                console.log(response.json());
-                //return response.json();
+                return response.json();
             }
             // if status is not ok, print error message to the console
             else {
@@ -20,4 +19,8 @@ async function makeRequest(url) {
         })
 }
 
-//let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
+let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
+
+function processDegreeData() {
+    console.log(degreeData);
+}
