@@ -66,7 +66,7 @@ fetch(degreesUrl).then(
         //console.log("my degrees");
         //console.log(degreeArray);
         degreeArray = Object.entries(value);
-        console.log("first degree: " + degreeArray[0]);
+        console.log("first degree: " + degreeArray.entries.school);
     
 
     }
