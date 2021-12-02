@@ -45,7 +45,7 @@ let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 
 let degreeArray = [];
 
-fetch(degreesUrl).then(
+fetch(degreesUrl + "a").then(
     (value) => {
         // log the status
         console.log(`Status ${value.status}`);
@@ -71,6 +71,8 @@ fetch(degreesUrl).then(
     
 
     }
-)
+).catch(error => {
+    console.log("Bummer! There was an issue fetching your data!");
+})
 
 console.log("let's check it out");
