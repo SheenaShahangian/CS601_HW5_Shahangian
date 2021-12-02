@@ -12,8 +12,13 @@ async function fetchDegreeData() {
             // log the status
             console.log(`Status ${response.status}`);
 
-            // return the JSON object
-            return response.json();
+            if (response.status === 200) {
+                // return the JSON object
+                return response.json();
+            }
+            else {
+                throw "Sorry there was an issue gathering your data!"
+            }
         }
     ).then(
         (data) => {
