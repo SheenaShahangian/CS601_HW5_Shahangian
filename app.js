@@ -55,7 +55,8 @@ fetch(degreesUrl).then(
     }
 ).then(
     (data) => {
-        console.log(data.my_degrees.degree.school);
+        console.log("LENGTH: " + data.length)
+        console.log(data.degree.school);
     
 
     }
