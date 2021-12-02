@@ -1,4 +1,4 @@
-// get the button from the page, which we will replace with the degree information
+// get the paragraph of text from the webpage, which we will replace with the degree information
 let degreeInfoContainer = document.getElementById("degree_info");
 
 
@@ -40,10 +40,9 @@ async function fetchDegreeData() {
 
             // paragraph info that contains second degree info we want to write to the html page
             const secondDegreeInfo = `I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
-            receive this degree in the year ${secondGraduationYear}.`
+            receive this degree in the year ${secondGraduationYear}. `
 
             const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
-            console.log(degreeInfo);
 
             // write the degree content to the page
             degreeInfoContainer.innerHTML = degreeInfo;
