@@ -55,8 +55,18 @@ fetch(degreesUrl).then(
     }
 ).then(
     (data) => {
-        console.log("in the data section");
+        console.log("DEGREE ONE");
         console.log(data.my_degrees[0].degree.school);
+        console.log(data.my_degrees[0].degree.major);
+        console.log(data.my_degrees[0].degree.type);
+        console.log(data.my_degrees[0].degree.year);
+
+        console.log("DEGREE TWO");
+        console.log(data.my_degrees[1].degree.school);
+        console.log(data.my_degrees[1].degree.major);
+        console.log(data.my_degrees[1].degree.type);
+        console.log(data.my_degrees[1].degree.year);
+
     
 
     }
