@@ -29,6 +29,7 @@
 function tester() {
     console.log("hey, we're here");
     console.log(makeRequest());
+    console.log("hey, we're done");
 }
 
 async function makeRequest() {
