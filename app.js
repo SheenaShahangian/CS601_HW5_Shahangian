@@ -16,4 +16,4 @@ async function makeRequest(url) {
         })
 }
 
-makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
+makeRequest("degrees.json");
