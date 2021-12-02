@@ -52,9 +52,11 @@ fetch(degreesUrl).then(
 
         // return the JSON object
         console.log(response.json());
+        return response.json();
     }
 ).then(
     (data) => {
+        console.log("in the data section");
         console.log(data);
     
 
