@@ -45,6 +45,8 @@ let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 
 fetch(degreesUrl).then(
     (response) => {
+        // log the status
+        console.log(response.status);
         console.log(response);
     }
 )
