@@ -21,13 +21,13 @@ When looking at the zipped folder, the directory structure is a follows:
 
 As you can see below, we start with a page with instructions.
 
-![](/Users/sheenashahangian/Desktop/Screen Shot 2021-12-02 at 10.34.08 AM.png)
+<img width="1674" alt="Screen Shot 2021-12-02 at 10 34 08 AM" src="https://user-images.githubusercontent.com/74014027/144478280-8fe05144-08bf-4ce9-9464-546b91ed48c7.png">
 
 ### After Clicking the Let's Start Button
 
 The difference is subtle here, but you'll notice the paragraph of text that contained instructions has been replaced with a paragraph containing my degree data that I fetched.
 
-![](/Users/sheenashahangian/Desktop/Screen Shot 2021-12-02 at 10.34.20 AM.png)
+<img width="1674" alt="Screen Shot 2021-12-02 at 10 34 20 AM" src="https://user-images.githubusercontent.com/74014027/144478360-660e9532-da38-456f-a68d-36d5a6498028.png">
 
 
 
