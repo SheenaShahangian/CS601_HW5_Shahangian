@@ -29,8 +29,8 @@ async function fetchDegreeData() {
             const firstGraduationYear = data.my_degrees[0].degree.year;
 
             // paragraph info that contains first degree info we want to write to the html page
-            const firstDegreeInfo = `<p>The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
-            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}.</p>`
+            const firstDegreeInfo = `The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
+            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}.`
 
             // gather data from the second college degree (array index 1)
             const secondSchool = data.my_degrees[1].degree.school;
@@ -39,14 +39,14 @@ async function fetchDegreeData() {
             const secondGraduationYear = data.my_degrees[1].degree.year;
 
             // paragraph info that contains second degree info we want to write to the html page
-            const secondDegreeInfo = `<p>I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
-            receive this degree in the year ${secondGraduationYear}. </p>`
+            const secondDegreeInfo = `I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
+            receive this degree in the year ${secondGraduationYear}.`
 
             const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
             console.log(degreeInfo);
 
             // write the degree content to the page
-            //degreeInfoContainer.innerHTML = degreeInfo;
+            degreeInfoContainer.innerHTML = degreeInfo;
         }
     )
     // error message if there's an issue fetching data
