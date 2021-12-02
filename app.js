@@ -10,7 +10,7 @@ async function makeRequest(url) {
 
             // check the status, and proceed if status is ok
             if (response.status === 200) {
-                console.log(JSON.stringify(response.json()));
+                console.log(JSON.parse(response.json()));
                 //return response.json();
             }
             // if status is not ok, print error message to the console
