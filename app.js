@@ -17,7 +17,7 @@ async function fetchDegreeData() {
                 return response.json();
             }
             else {
-                throw "Sorry there was an issue gathering your data!"
+                throw "Sorry there was an issue gathering your data!";
             }
         }
     ).then(
@@ -30,7 +30,7 @@ async function fetchDegreeData() {
 
             // paragraph info that contains first degree info we want to write to the html page
             const firstDegreeInfo = `The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
-            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}. `
+            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}. `;
 
             // gather data from the second college degree (array index 1)
             const secondSchool = data.my_degrees[1].degree.school;
@@ -40,7 +40,7 @@ async function fetchDegreeData() {
 
             // paragraph info that contains second degree info we want to write to the html page
             const secondDegreeInfo = `I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
-            receive this degree in the year ${secondGraduationYear}. `
+            receive this degree in the year ${secondGraduationYear}. `;
 
             const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
 
@@ -51,6 +51,6 @@ async function fetchDegreeData() {
     // error message if there's an issue fetching data
     .catch(error => {
         console.log("Bummer! There was an issue fetching your data!");
-    })
+    });
 }
 
