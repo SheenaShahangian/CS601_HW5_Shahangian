@@ -17,4 +17,4 @@ async function makeRequest(url) {
         })
 }
 
-let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
+//let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
