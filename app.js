@@ -32,6 +32,20 @@ function processDegreeData() {
 
 async function makeRequest() {
     await fetch('https://serene-wing-4e1877.netlify.app/degrees.json')
-        .then(response => response.json())
+        //.then(response => response.json())
+        .then(function(response) {
+
+            // print status to the console
+            console.log(`Status: ${response.status}`);
+            
+            // check the status, and proceed if status is ok
+            if (response.status === 200) {
+            response.json();
+            }
+            // if status is not ok, print error message to the console
+            else {
+                console.log("Sorry, there was an error when fetching your data!")
+            }
+        })
         .then(data => console.log(data));
 }
