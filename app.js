@@ -10,12 +10,15 @@ async function makeRequest(url) {
 
             // check the status, and proceed if status is ok
             if (response.status === 200) {
-                return response.json();
+                response.json();
             }
             // if status is not ok, print error message to the console
             else {
                 console.log("Sorry, there was an error when fetching your data!")
             }
+        })
+        .then(function(data) {
+            return data;
         })
 }
 
