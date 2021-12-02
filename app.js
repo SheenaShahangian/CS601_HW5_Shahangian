@@ -36,8 +36,5 @@ async function makeRequest() {
             response.json();
         })
         //.then(response => response.json())
-        .then(function(data) {
-            console.log(data);
-        })
-        //.then(data => console.log(data));
+        .then(data => console.log(data));
 }
