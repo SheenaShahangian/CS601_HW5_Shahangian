@@ -51,7 +51,7 @@ fetch(degreesUrl).then(
         console.log(`Status ${response.status}`);
 
         // return the JSON object
-        return response.json();
+        console.log(response.json());
     }
 ).then(
     (data) => {
