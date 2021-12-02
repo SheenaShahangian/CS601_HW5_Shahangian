@@ -27,6 +27,7 @@
 // let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
 
 function tester() {
+    console.log("hey, we're here");
     console.log(makeRequest());
 }
 
@@ -38,7 +39,7 @@ async function makeRequest() {
                 //throw new Error("Status Issue " + response.status);
             //}
             response.json()
-        .then(data => ({status: response.status, return: data})))
+        .then(data => ({status: response.status, body: data})))
         // .then(function(response) {
 
         //     // print status to the console
