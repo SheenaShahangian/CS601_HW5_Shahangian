@@ -1,9 +1,9 @@
 // get the button from the page, which we will replace with the degree information
-let fetchDegreeButton = document.getElementById("get_degrees_button");
+let degreeInfoContainer = document.getElementById("degree_info");
 
 
 // url for the JSON file
-let degreesUrl = "https://serene-wing-4e1877.netlify.app/degreesa.json";
+let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 
 async function fetchDegreeData() {
     // fetch the data in the JSON file
@@ -22,18 +22,30 @@ async function fetchDegreeData() {
         }
     ).then(
         (data) => {
-            console.log("DEGREE ONE");
-            console.log(data.my_degrees[0].degree.school);
-            console.log(data.my_degrees[0].degree.major);
-            console.log(data.my_degrees[0].degree.type);
-            console.log(data.my_degrees[0].degree.year);
+            // gather data from the first college degree (array index 0)
+            const firstSchool = data.my_degrees[0].degree.school;
+            const firstDegree = data.my_degrees[0].degree.major;
+            const firstDegreeType = data.my_degrees[0].degree.type;
+            const firstGraduationYear = data.my_degrees[0].degree.year;
 
-            console.log("DEGREE TWO");
-            console.log(data.my_degrees[1].degree.school);
-            console.log(data.my_degrees[1].degree.major);
-            console.log(data.my_degrees[1].degree.type);
-            console.log(data.my_degrees[1].degree.year);
+            // paragraph info that contains first degree info we want to write to the html page
+            const firstDegreeInfo = `<p>The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
+            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}.</p>`
 
+            // gather data from the second college degree (array index 1)
+            const secondSchool = data.my_degrees[1].degree.school;
+            const secondDegree = data.my_degrees[1].degree.major;
+            const secondDegreeType = data.my_degrees[1].degree.type;
+            const secondGraduationYear = data.my_degrees[1].degree.year;
+
+            // paragraph info that contains second degree info we want to write to the html page
+            const secondDegreeInfo = `<p>I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
+            receive this degree in the year ${secondGraduationYear}. </p>`
+
+            const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
+
+            // write the degree content to the page
+            degreeInfoContainer.innerHTML = degreeInfo;
         }
     )
     // error message if there's an issue fetching data
