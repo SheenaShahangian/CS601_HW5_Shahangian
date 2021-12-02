@@ -45,34 +45,23 @@ let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 
 let degreeArray = [];
 
-fetch(degreesUrl + "a").then(
-    (value) => {
+fetch(degreesUrl).then(
+    (response) => {
         // log the status
-        console.log(`Status ${value.status}`);
+        console.log(`Status ${response.status}`);
 
-        return value.json();
-
-        // if (response.status === 200) {
-        //     return response.json();
-        // }
-        // else {
-        //     console.log("Sorry, there was an error when fetching your data!")
-        // }
+        // return the JSON object
+        return response.json();
     }
 ).then(
-    (value) => {
-        //console.log(value);
-        //degreeArray = value;
-        //console.log("my degrees");
-        //console.log(degreeArray);
-        degreeArray = Object.entries(value);
-        console.log(degreeArray);
-        console.log("first degree: " + degreeArray.entries.school);
+    (data) => {
+        console.log(data);
     
 
     }
-).catch(error => {
+)
+// error message if there's an issue
+.catch(error => {
     console.log("Bummer! There was an issue fetching your data!");
 })
 
-console.log("let's check it out");
