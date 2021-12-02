@@ -26,9 +26,6 @@
 
 // let degreeData = makeRequest("https://serene-wing-4e1877.netlify.app/degrees.json");
 
-function processDegreeData() {
-    makeRequest("degrees.json");
-}
 
 async function makeRequest() {
     await fetch('https://serene-wing-4e1877.netlify.app/degrees.json')
