@@ -4,7 +4,8 @@ async function makeRequest(url) {
     await fetch(url)
         // the ".then" listed below will run when we get a response from the server
         .then(function(response) {
-            console.log("pre-check");
+            // print status to the console
+            console.log(`Status: ${response.status}`);
             // check the status, and proceed if status is ok
             if (response.status === 200) {
                 // return JSON object
