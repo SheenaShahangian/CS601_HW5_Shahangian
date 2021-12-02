@@ -50,12 +50,14 @@ fetch(degreesUrl).then(
         // log the status
         console.log(`Status ${response.status}`);
 
-        if (response.status === 200) {
-            return response.json();
-        }
-        else {
-            console.log("Sorry, there was an error when fetching your data!")
-        }
+        return response.json();
+
+        // if (response.status === 200) {
+        //     return response.json();
+        // }
+        // else {
+        //     console.log("Sorry, there was an error when fetching your data!")
+        // }
     }
 ).then(
     (response) => {
