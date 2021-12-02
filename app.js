@@ -3,7 +3,7 @@ let fetchDegreeButton = document.getElementById("get_degrees_button");
 
 
 // url for the JSON file
-let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
+let degreesUrl = "https://serene-wing-4e1877.netlify.app/degreesa.json";
 
 async function fetchDegreeData() {
     // fetch the data in the JSON file
