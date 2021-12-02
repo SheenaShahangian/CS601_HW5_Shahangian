@@ -1,7 +1,7 @@
 
-async function makeRequest(url) {
+function makeRequest(url) {
     // fetch the url
-    await fetch(url)
+    fetch(url)
         // the ".then" listed below will run when we get a response from the server
         .then(function(response) {
 
