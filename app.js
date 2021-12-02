@@ -1,10 +1,8 @@
 
-
 // url for the JSON file
 let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 
-
-
+// fetch the data in the JSON file
 fetch(degreesUrl).then(
     (response) => {
         // log the status
@@ -29,7 +27,7 @@ fetch(degreesUrl).then(
 
     }
 )
-// error message if there's an issue
+// error message if there's an issue fetching data
 .catch(error => {
     console.log("Bummer! There was an issue fetching your data!");
 })
