@@ -46,11 +46,11 @@ let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
 let degreeArray = [];
 
 fetch(degreesUrl).then(
-    (response) => {
+    (value) => {
         // log the status
-        console.log(`Status ${response.status}`);
+        console.log(`Status ${value.status}`);
 
-        return response.json();
+        return value.json();
 
         // if (response.status === 200) {
         //     return response.json();
@@ -60,14 +60,12 @@ fetch(degreesUrl).then(
         // }
     }
 ).then(
-    (response) => {
-        //degreeArray = response;
-        console.log("my degrees");
+    (value) => {
+        console.log(value);
+        //degreeArray = value;
+        //console.log("my degrees");
         //console.log(degreeArray);
-        for(var i in response) {
-            degreeArray.push([i, response [i]]);
-        }
-        console.log(degreeArray[0]);
+    
 
     }
 )
