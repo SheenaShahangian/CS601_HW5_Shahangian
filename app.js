@@ -29,13 +29,12 @@
 
 async function makeRequest() {
     await fetch('https://serene-wing-4e1877.netlify.app/degrees.json')
-        .then(response => {
+        .then(response => 
             // check the status, and if it's not okay, throw an error
             //if (!response.ok) {
                 //throw new Error("Status Issue " + response.status);
             //}
-            response.json();
-        })
+            response.json())
         // .then(function(response) {
 
         //     // print status to the console
