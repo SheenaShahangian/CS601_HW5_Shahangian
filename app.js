@@ -64,6 +64,7 @@ fetch(degreesUrl).then(
         degreeArray = response;
         console.log("my degrees");
         console.log(degreeArray);
+        console.log("that's it");
     }
 )
 
