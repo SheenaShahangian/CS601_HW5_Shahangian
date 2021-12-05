@@ -23,29 +23,30 @@ async function fetchDegreeData() {
     ).then(
         (data) => {
             // gather data from the first college degree (array index 0)
-            const firstSchool = data.my_degrees[0].degree.school;
-            const firstDegree = data.my_degrees[0].degree.major;
-            const firstDegreeType = data.my_degrees[0].degree.type;
-            const firstGraduationYear = data.my_degrees[0].degree.year;
-
-            // paragraph info that contains first degree info we want to write to the html page
-            const firstDegreeInfo = `The first college degree I received was from ${firstSchool}, where I majored in ${firstDegree}. This 
-            was a ${firstDegreeType}, and I graduated with this degree in ${firstGraduationYear}. `;
+            const firstSchool = `<td>${data.my_degrees[0].degree.school}</td>`;
+            const firstDegree = `<td>${data.my_degrees[0].degree.major}</td>`;
+            const firstDegreeType = `<td>${data.my_degrees[0].degree.type}</td>`;
+            const firstGraduationYear = `<td>${data.my_degrees[0].degree.year}</td>`;
 
             // gather data from the second college degree (array index 1)
-            const secondSchool = data.my_degrees[1].degree.school;
-            const secondDegree = data.my_degrees[1].degree.major;
-            const secondDegreeType = data.my_degrees[1].degree.type;
-            const secondGraduationYear = data.my_degrees[1].degree.year;
+            const secondSchool = `<td>${data.my_degrees[1].degree.school}</td>`;
+            const secondDegree = `<td>${data.my_degrees[1].degree.major}</td>`;
+            const secondDegreeType = `<td>${data.my_degrees[1].degree.type}</td>`;
+            const secondGraduationYear = `<td>${data.my_degrees[1].degree.year}</td>`;
 
-            // paragraph info that contains second degree info we want to write to the html page
-            const secondDegreeInfo = `I have yet to receive my ${secondDegreeType} in ${secondDegree} from ${secondSchool}. However, I will 
-            receive this degree in the year ${secondGraduationYear}. `;
-
-            const degreeInfo = firstDegreeInfo + secondDegreeInfo; // add up the strings to create full content about degrees
+            const degreeTable = `<table>
+            <tr>
+            <th>School</th>
+            <th>Major</th>
+            <th>Degree Type</th>
+            <th>Graduation Year</th>
+            </tr>
+            <tr>${firstSchool}${firstDegree}${firstDegreeType}${firstGraduationYear}</tr>
+            <tr>${secondSchool}${secondDegree}${secondDegreeType}${secondGraduationYear}</tr>
+            </table>`
 
             // write the degree content to the page
-            degreeInfoContainer.innerHTML = degreeInfo;
+            degreeInfoContainer.innerHTML = degreeTable;
         }
     )
     // error message if there's an issue fetching data
