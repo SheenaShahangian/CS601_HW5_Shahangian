@@ -16,7 +16,7 @@ body {
 /* Style of the degree info section */
 .degree_info_section {
     margin: auto;
-    width: 70%; /* DO NOT take up full width of the page */
+    width: 80%; /* DO NOT take up full width of the page */
     text-align: center;
 }
 
@@ -108,6 +108,4 @@ th {
 table {
     border-spacing: 1.5rem; /* add breathing room between cells */
     margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
 }
