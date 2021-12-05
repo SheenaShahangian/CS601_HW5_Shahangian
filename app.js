@@ -34,6 +34,7 @@ async function fetchDegreeData() {
             const secondDegreeType = `<td>${data.my_degrees[1].degree.type}</td>`;
             const secondGraduationYear = `<td>${data.my_degrees[1].degree.year}</td>`;
 
+            // create table with degree data gathered earlier
             const degreeTable = `<table>
             <tr>
             <th>School</th>
@@ -45,7 +46,7 @@ async function fetchDegreeData() {
             <tr>${secondSchool}${secondDegree}${secondDegreeType}${secondGraduationYear}</tr>
             </table>`
 
-            // write the degree content to the page
+            // write the degree content/table to the page
             degreeInfoContainer.innerHTML = degreeTable;
         }
     )
