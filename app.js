@@ -44,7 +44,7 @@ async function fetchDegreeData() {
             </tr>
             <tr>${firstSchool}${firstDegree}${firstDegreeType}${firstGraduationYear}</tr>
             <tr>${secondSchool}${secondDegree}${secondDegreeType}${secondGraduationYear}</tr>
-            </table>`
+            </table>`;
 
             // write the degree content/table to the page
             degreeInfoContainer.innerHTML = degreeTable;
