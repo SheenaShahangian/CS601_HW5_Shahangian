@@ -96,9 +96,11 @@ a {
 /* Style of the table cells */
 th, td {
     text-align: left;
+    padding: 1rem;
+
 }
 
 /* Style of the table */
 table {
-    border: 0.3rem#ffffff;
+    border: 0.3rem #ffffff;
 }
