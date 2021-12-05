@@ -107,4 +107,7 @@ th {
 /* Style of the table */
 table {
     border-spacing: 1.5rem; /* add breathing room between cells */
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 }
