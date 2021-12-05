@@ -96,8 +96,13 @@ a {
 /* Style of the table cells */
 th, td {
     text-align: left;
-    border: 2px solid #ffffff;
+    margin: 3rem;
+}
 
+/* Have a bottom border for all table headings */
+th {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 1rem;
 }
 
 /* Style of the table */
