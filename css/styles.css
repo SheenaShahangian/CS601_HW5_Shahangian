@@ -92,3 +92,13 @@ footer p {
 a {
     color: #E76F51;
 }
+
+/* Style of the table cells */
+th, td {
+    text-align: left;
+}
+
+/* Style of the table */
+table {
+    border: 0.3rem#ffffff;
+}
