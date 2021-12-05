@@ -102,11 +102,10 @@ th, td {
 /* Have a bottom border for all table headings */
 th {
     border-bottom: 2px solid #ffffff;
-    margin-bottom: 1rem;
 }
 
 /* Style of the table */
 table {
-    padding: 1rem;
+    border-spacing: 3rem;
     margin: 0 auto;
 }
