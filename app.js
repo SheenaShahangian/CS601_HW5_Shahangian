@@ -1,6 +1,9 @@
 // get the paragraph of text from the webpage, which we will replace with the degree information
 let degreeInfoContainer = document.getElementById("degree_info");
 
+// get the let's begin button, which we'll want to hide
+let beginButton = document.querySelector(".begin_button");
+
 
 // url for the JSON file
 let degreesUrl = "https://serene-wing-4e1877.netlify.app/degrees.json";
@@ -48,6 +51,9 @@ async function fetchDegreeData() {
 
             // write the degree content/table to the page
             degreeInfoContainer.innerHTML = degreeTable;
+
+            // hide the begin button
+            beginButton.style.display = 'none';
         }
     )
     // error message if there's an issue fetching data
