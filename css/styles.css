@@ -96,6 +96,7 @@ a {
 /* Style of the table cells */
 th, td {
     text-align: left;
+    border: 2px solid #ffffff;
 
 }
 
@@ -103,5 +104,4 @@ th, td {
 table {
     padding: 1rem;
     margin: 0 auto;
-    border: 2px solid #ffffff;
 }
