@@ -4,7 +4,7 @@ Per the professor's request during lecture, I have hosted my assignment with Net
 
 Please click on that link in order to run this program. As the assignment instructions indicate, this link (rather than opening the index.html file locally) will be the only way to use fetch.
 
-In order to run the program, I have created a styled and designed page (live hosted link above). This page has instructions, along with a button you can press to fetch my degree data. **Please note**, the degree data will replace the instructions paragraph when you click the button. You'll notice the white paragraph contents will now be different when you click the button (I will include before and after screenshots below for reference of a sample run I did of this program to show you what I mean).
+In order to run the program, I have created a styled and designed page (live hosted link above). This page has instructions, along with a button you can press to fetch my degree data. **Please note**, the degree data will replace the instructions paragraph when you click the button. You'll notice a table of degree information will replace the instructions and the let's start button will be hidden once results are rendered (I will include before and after screenshots below for reference of a sample run I did of this program to show you what I mean).
 
 The JSON file I created can be found at: https://serene-wing-4e1877.netlify.app/degrees.json
 
@@ -25,9 +25,9 @@ As you can see below, we start with a page with instructions.
 
 ### After Clicking the Let's Start Button
 
-The difference is subtle here, but you'll notice the paragraph of text that contained instructions has been replaced with a paragraph containing my degree data that I fetched.
+The difference is subtle here, but you'll notice the paragraph of text that contained instructions has been replaced with a table containing my degree data that I fetched, and the button to start is now gone, as it is no longer relevant.
 
-<img width="1674" alt="Screen Shot 2021-12-02 at 10 34 20 AM" src="https://user-images.githubusercontent.com/74014027/144478360-660e9532-da38-456f-a68d-36d5a6498028.png">
+<img width="1674" alt="Screen Shot 2021-12-04 at 5 58 57 PM" src="https://user-images.githubusercontent.com/74014027/144729318-646aaf20-13f7-41f5-82c4-c608987f1b29.png">
 
 
 
@@ -52,7 +52,7 @@ Per the instructions, I have done the following in my app.js file, which contain
   * It creates a fetch request to return a promise.
   * It resolves the promise using the Response class.
   * It checks the status code of the response (I do this in a conditional statement, but I also print this information to the console as well, for good measure).
-  * I process the returned JSON data using JavaScript. I opted to use all of the data stored in the JSON file, which I then wrote to the html page in a paragraph format.
+  * I process the returned JSON data using JavaScript. I opted to use all of the data stored in the JSON file, which I then wrote to the html page in a table format.
 
 * I have uploaded my JS program (app.js) to the same directory as my JSON file. You can find a direct live link to my JS here: https://serene-wing-4e1877.netlify.app/app.js
 * I have made sure to run this program numerous times to ensure it works. To go above and beyond, I have also tested it in more than one browser, too.
@@ -63,7 +63,7 @@ I've attempted to add some new features beyond the standard requirements listed 
 
 * I have tested my program in Google Chrome, Firefox, and Safari to ensure it works as expected in multiple browsers.
 * I have designed and styled my page so that it is a clean and easy to use user interface.
-* I have used new ES6 features, such as arrow functions, let and const. I have also used an async function, per the professor's recommendation (ES8).
+* I have used new ES6 features, such as arrow functions, let and const, and string template literals. I have also used an async function, per the professor's recommendation (ES8).
 * While not explicitly asked for in the instructions, I have opted to write my degree data back into the html page, so the user doesn't have to reference the console if they don't want to.
 * I have ensured that I have not only checked the status code of the response, but that I have a catch statement that gracefully handles those issues.
 * Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
